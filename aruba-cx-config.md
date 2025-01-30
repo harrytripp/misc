@@ -127,11 +127,12 @@ wr me
 ```
 
 ### Turn on Blue Locator Light
-```plaintext
-led locator flashing   # Continuous flash
-led locator on         # Stays on
-led locator off        # Light turns off
-```
+
+| Command | Description |
+|---------|-------------|
+| `led locator flashing` | Continuous flash |
+| `led locator on` | Stays on |
+| `led locator off` | Light turns off |
 
 ### Names and Descriptions
 ```plaintext
@@ -147,11 +148,12 @@ description xxxxx
 > Must exit configuration mode to use these commands.
 > If in configuration mode, prefix commands with `do`, e.g., `do sh int 1/1/1`.
 
-```plaintext
-show system               # Shows general system status
-show running-config       # Displays current non-default configuration
-show vlan                 # Displays configuration info for all VLANs
-show vlan xx              # Displays info for specified VLAN
-show interface            # Displays info for all ports
-show interface 1/1/xxx    # Displays info for specified port
-show vlan interface 1/1/xx # Displays VLANs configured for a port
+| Command | Description |
+|---------|-------------|
+| `show system` | Shows general system status |
+| `show running-config` | Displays current non-default configuration |
+| `show vlan` | Displays configuration info for all VLANs |
+| `show vlan xx` | Displays info for specified VLAN |
+| `show interface` | Displays info for all ports |
+| `show interface 1/1/xxx` | Displays info for specified port |
+| `show vlan interface 1/1/xx` | Displays VLANs configured for a port |
