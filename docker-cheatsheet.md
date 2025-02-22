@@ -70,3 +70,13 @@ $ sudo systemctl stop docker
 ```sh
 $ rpm -qa | grep docker
 ```
+
+### Deep clean Docker system
+Removes:
+- All stopped containers
+- All networks not used by at least one container
+- All dangling and unused images
+- All build cache
+```sh
+$ sudo docker system prune -a
+```
